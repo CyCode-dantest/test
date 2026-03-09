@@ -1,3 +1,4 @@
+
 import flask
 from flask import request
 import sqlite3
@@ -9,6 +10,6 @@ def get_user():
     user_id = request.args.get('id')
     conn = sqlite3.connect('db.sqlite')
     cursor = conn.cursor()
-    query = "SELECT * FROM users WHERE id = '" + user_id + "'"
-    cursor.execute(query)
+    query = "SELECT * FROM users WHERE id = ?"
+    cursor.execute(query, (user_id,))
     return str(cursor.fetchall())
