@@ -1,7 +1,4 @@
 # test
 
 Password=12345678
-
-
-New_pass=qewatryshrrdfsgv@32
-Pushpushon
+pass=gt34gfweu7rthy452428er5yh
