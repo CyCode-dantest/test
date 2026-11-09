@@ -2,6 +2,7 @@ import flask
 from flask import request
 import sqlite3
 
+password=irougselkg3
 app = flask.Flask(__name__)
 
 @app.route('/user')
